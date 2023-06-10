@@ -212,6 +212,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.button {
+margin-top: 7%;
+border:none;
+box-shadow: none;
+padding: 7%;
+padding-right: 6%;
+padding-left: 6%;
+background: #4a57ee;
+border-radius: 4px;
+font-family: 'New Rubrik';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 124.2%;
+text-transform: uppercase;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .contactdiv {
 position: absolute; /* Set position of child element to absolute */
 bottom: 0; /* Place child at the bottom of the parent container */
