@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Jobs</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container-fluid px-md-5 py-md-3">
+        <div class="row">
+            <div class="col-12 col-md-10">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1 d-flex justify-content-end">
+                        <!-- Логотип сервиса -->
+                        <img src="media/job-64x64.png" alt="">
+                    </div>
+                    <div class="col-10 col-md-11">
+                        <div class="search-input-group input-group">
+                            <span class="input-group-text">
+                                <svg width="15" height="14" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.2645" cy="6.57364" r="5.51548" stroke="#26377C" stroke-width="2" />
+                                    
+                                </svg>
+                            </span>
+                            <input type="text" class="form-control search-input"
+                                placeholder="Поиск" aria-label="Search"
+                                aria-describedby="button-addon2">
+                            <span class="input-group-text">
+                                <button class="xbutton">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.80273 1.19122L8.70117 8.08966" stroke="#26377C" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <path d="M8.70117 1.19122L1.80273 8.08966" stroke="#26377C" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1 d-flex justify-content-end largedropdown">
+                        <div class="dropdown d-flex align-items-center largedropdown">
+                            <button class="dropdownsandwich px-3" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <ul class="dropdown-menu dropnav" aria-labelledby="dropdownMenuButton">
+                                <div class="row">
+                                    <div class="col">
+                                        <li><a class="dropdown-item" href="#">Link</a></li>
+                                        <li><a class="dropdown-item" href="#">Link</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col--12 col-md-11">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse mainnavbar" id="navbarNav">
+                                    <ul class="navbar-nav w-100" style="display:flex; justify-content: space-between;">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Вакансии</a>
+                                        </li>
+                                        
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Работодателям</a>
+                                        </li>
+                                        
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Помощь</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 phonesdiv">
+                <div class="row justify-content-center" style="margin-left: 10%; margin-right: 16%;">
+                    <div class="col-md-12 col-6 phone topphone">
+                            <button class="button">
+                               Создать вакансию
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="container-fluid" style="padding: 0;width: 100%;">
+        <div class="footer1">
+            <div class="containerbox footerblock1 row " style="width: 100%;">
+                <div class="col-12 col-md-10" style="margin-top: 7px;">
+                    <a href="" class="footerblock1text1">по всем вопросам пишите на:</a>
+                    <a href="" class="footerblock1text2">astana@koreavision.kz</a>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="row">
+                        <div class=" col-3"></div>
+                        <div class="col-3">
+                            <a href="">
+                                <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="19.8321" cy="19.5821" r="19.1597" fill="white" />
+                                    <path
+                                        d="M25.9671 21.6633L25.959 21.7309C23.9755 20.7424 23.7681 20.6107 23.5119 20.9949C23.3342 21.261 22.8165 21.8644 22.6604 22.043C22.5026 22.2189 22.3456 22.2324 22.0777 22.1107C21.8071 21.9754 20.9385 21.6913 19.9103 20.7712C19.1093 20.0541 18.5717 19.1747 18.413 18.9041C18.1487 18.4477 18.7016 18.3827 19.2049 17.4302C19.2951 17.2408 19.2491 17.092 19.1824 16.9576C19.1147 16.8223 18.5762 15.4964 18.3507 14.9678C18.1342 14.441 17.9114 14.5078 17.7446 14.5078C17.225 14.4627 16.8453 14.4699 16.5107 14.8181C15.0548 16.4182 15.4219 18.0689 16.6676 19.8241C19.1156 23.028 20.4199 23.6179 22.8048 24.4369C23.4488 24.6417 24.036 24.6128 24.5005 24.5461C25.0182 24.464 26.0943 23.8957 26.3189 23.2598C26.5489 22.6239 26.5489 22.0962 26.4813 21.9745C26.4145 21.8527 26.2377 21.7851 25.9671 21.6633Z"
+                                        fill="#A91E38" />
+                                    <path
+                                        d="M28.6846 11.8697C21.7492 5.16516 10.2714 10.0278 10.2669 19.4861C10.2669 21.3767 10.7621 23.2203 11.7056 24.8484L10.1758 30.4065L15.8899 28.9164C23.0201 32.7679 31.82 27.6536 31.8236 19.4915C31.8236 16.6268 30.7051 13.9307 28.6711 11.9048L28.6846 11.8697ZM30.0214 19.4617C30.016 26.3466 22.4582 30.6464 16.4807 27.1323L16.156 26.9392L12.7735 27.8187L13.68 24.5309L13.4644 24.1927C9.74463 18.2711 14.0183 10.532 21.0646 10.532C23.4585 10.532 25.7054 11.4656 27.3975 13.1568C29.0887 14.8336 30.0214 17.0805 30.0214 19.4617Z"
+                                        fill="#A91E38" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="">
+                                <svg width="40" height="39" viewBox="0 0 40 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20.1514" cy="19.5816" r="19.1597" fill="white" />
+                                    <path
+                                        d="M16.8547 21.8795L16.556 25.9122C16.9833 25.9122 17.1684 25.736 17.3903 25.5244L19.3937 23.6864L23.545 26.6048C24.3064 27.0122 24.8428 26.7977 25.0481 25.9325L27.773 13.6753L27.7738 13.6746C28.0153 12.5941 27.3668 12.1717 26.625 12.4367L10.6082 18.3234C9.51512 18.7307 9.53167 19.3157 10.4224 19.5807L14.5173 20.8034L24.0288 15.0901C24.4764 14.8055 24.8834 14.963 24.5486 15.2475L16.8547 21.8795Z"
+                                        fill="#A91E38" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="">
+                                <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="19.4713" cy="19.5816" r="19.1597" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.7849 11.3838H16.1581C13.465 11.3838 11.2739 13.5748 11.2739 16.268V22.8948C11.2739 25.5879 13.465 27.779 16.1581 27.779H22.7849C25.4781 27.779 27.6691 25.5879 27.6691 22.8948V16.268C27.6691 13.5748 25.478 11.3838 22.7849 11.3838ZM26.0197 22.8953C26.0197 24.6819 24.5714 26.1302 22.7848 26.1302H16.1581C14.3715 26.1302 12.9232 24.6819 12.9232 22.8953V16.2686C12.9232 14.482 14.3715 13.0337 16.1581 13.0337H22.7848C24.5714 13.0337 26.0197 14.482 26.0197 16.2686V22.8953ZM15.2308 19.5821C15.2308 17.244 17.1331 15.3418 19.4712 15.3418C21.8094 15.3418 23.7116 17.244 23.7116 19.5821C23.7116 21.9203 21.8094 23.8225 19.4712 23.8225C17.1331 23.8225 15.2308 21.9203 15.2308 19.5821ZM19.4713 22.1721C18.0403 22.1721 16.8802 21.012 16.8802 19.5811C16.8802 18.1501 18.0403 16.99 19.4713 16.99C20.9023 16.99 22.0623 18.1501 22.0623 19.5811C22.0623 21.012 20.9022 22.1721 19.4713 22.1721ZM24.7362 15.3706C24.7362 15.9317 24.2813 16.3867 23.7201 16.3867C23.159 16.3867 22.7041 15.9317 22.7041 15.3706C22.7041 14.8094 23.159 14.3545 23.7201 14.3545C24.2813 14.3545 24.7362 14.8094 24.7362 15.3706Z"
+                                        fill="#A91E38" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="containerbox footerblock2 row" style="width: 100%;">
+                <div class="col-12 col-md-6 footer2block">
+                    <div class="footerparenttext" style="margin: 0;">
+                        Направления
+                    </div>
+                    <div class="row footerchild">
+                        <div class="col-6  col-md-3">
+                            <div class="footerchildtext">
+                                ДИАГНОСТИЧЕСКИЕ ПАКЕТЫ (CHECK-UP)
+                            </div>
+                            <div class="footerchildtext">
+                                ДЕТСКАЯ ОНКОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ВОСТОЧНАЯ МЕДИЦИНА
+                            </div>
+                            <div class="footerchildtext">
+                                ГИНЕКОЛОГИЯ И ЭКО
+                            </div>
+                            <div class="footerchildtext">
+                                ГАСТРОЭНТЕРОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ДЕРМАТОЛОГИЯ
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="footerchildtext">
+                                КАРДИОХИРУРГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                НЕЙРОХИРУРГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ОБЩАЯ ХИРУРГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ОНКОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ОРТОПЕДИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ОТОЛАРИНГОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ОФТАЛЬМОЛОГИЯ
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="footerchildtext">
+                                ПЕДИАТРИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ПЛАСТИЧЕСКАЯ ХИРУРГИЯ КОСМЕТОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                РЕВМАТОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                СТОМАТОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ТРАНСПЛАНТАЦИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ТОРАКАЛЬНАЯ ХИРУРГИЯ
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="footerchildtext">
+                                УРОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ФЛЕБОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ЭНДОКРИНОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                НЕВРОЛОГИЯ
+                            </div>
+                            <div class="footerchildtext">
+                                ПРОТОННАЯ ТЕРАПИЯ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 footer2block row">
+                    <div class="col-md-3 col-6">
+                        <div class="footerparenttext" style="margin: 0;">
+                            С чего начать?
+                        </div>
+                        <div class="footerparenttext">
+                            Клиники
+                        </div>
+                        <div class="footerchildtext">
+                            КЛИНИКИ ЮЖНОЙ КОРЕИ
+                        </div>
+                        <div class="footerchildtext">
+                            ПЛАСТИЧЕСКАЯ ХИРУРГИЯ В КОРЕЕ
+                        </div>
+                        <div class="footerparenttext">
+                            Цены
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footerparenttext" style="margin: 0;">
+                            ПАКЕТы kv
+                        </div>
+                        <div class="footerchildtext">
+                            Блефаропластика
+                        </div>
+                        <div class="footerchildtext">
+                            Нитевой лифтинг
+                        </div>
+                        <div class="footerchildtext">
+                            Econom
+                        </div>
+                        <div class="footerchildtext">
+                            Premium
+                        </div>
+                        <div class="footerchildtext">
+                            SMAS лифитинг
+                        </div>
+                        <div class="footerchildtext">
+                            VIP
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footerparenttext" style="margin: 0;">
+                            KV Club
+                        </div>
+                        <div class="footerparenttext">
+                            Отзывы о kv
+                        </div>
+                        <div class="footerparenttext">
+                            О нас
+                        </div>
+                        <div class="footerparenttext">
+                            НОВОСТИ
+                        </div>
+                        <div class="footerparenttext">
+                            ВРАЧИ КОРЕИ
+                        </div>
+                        <div class="footerparenttext">
+                            Визы в Корею
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footerparenttext" style="margin: 0;">
+                            ТУРИЗМ
+                        </div>
+                        <div class="footerparenttext">
+                            Контакты
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerbox row" style="width: 100%;">
+                <hr style="background: #4D4D4D; height: 2px;">
+            </div>
+            <div class="containerbox row" style="width: 100%;">
+                <div class="col-md-2 col-4 footerauthor">
+                    ABC DESIGN
+                </div>
+                <div class="col-md-8 col-4">
+
+                </div>
+                <div class="col-md-2 col-4 footersogl">
+                    Пользовательское соглашение
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

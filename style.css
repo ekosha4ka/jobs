@@ -163,7 +163,7 @@ overflow: hidden;
 padding: 0;
 margin: 0;
 }
-.video-container video {
+.video-container img {
 position: absolute;
 filter: brightness(0.7);
 min-width: 100%;
@@ -171,7 +171,7 @@ min-height: 100%;
 z-index: -1;
 padding: 0;
 }
-.videotext1 {
+.phototext1 {
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -182,7 +182,7 @@ align-items: flex-end;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 }
-.videotext2 {
+.phototext2 {
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -192,14 +192,14 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #B1B1B1;
 }
-.videobutton {
+.photobutton {
 margin-top: 7%;
 border:none;
 box-shadow: none;
 padding: 2%;
 padding-right: 6%;
 padding-left: 6%;
-background: #A91E38;
+background: #4a57ee;
 border-radius: 4px;
 font-family: 'New Rubrik';
 font-style: normal;
@@ -220,7 +220,7 @@ padding: 7%;
 padding-right: 6%;
 padding-left: 6%;
 background: #4a57ee;
-border-radius: 4px;
+border-radius: 10px;
 font-family: 'New Rubrik';
 font-style: normal;
 font-weight: 600;
@@ -1045,7 +1045,7 @@ overflow: hidden;
 padding: 0;
 margin: 0;
 }
-.video-container video {
+.video-container img {
 position: absolute;
 filter: brightness(0.7);
 min-width: 100%;
@@ -1053,10 +1053,10 @@ min-height: 100%;
 z-index: -1;
 padding: 0;
 }
-.videobutton {
+.photobutton {
 margin-left: 20%;
 }
-.videotext1 {
+.phototext1 {
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -1067,7 +1067,7 @@ align-items: flex-end;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 }
-.videotext2 {
+.phototext2 {
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
 font-weight: 400;
