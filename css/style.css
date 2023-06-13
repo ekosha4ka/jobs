@@ -230,7 +230,11 @@ text-transform: uppercase;
 color: #FFFFFF;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content:center;
+}
+
+.icon {
+  font-size: 25px;
 }
 .contactdiv {
 position: absolute; /* Set position of child element to absolute */
@@ -863,6 +867,12 @@ height: auto;
 max-height: 75px;
 margin: 25px;
 width: 70%;
+}
+
+.filter {
+  display: flex;
+  justify-content: right;
+  float: left;
 }
 
 .footer1 {
